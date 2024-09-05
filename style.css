@@ -1,0 +1,85 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle, rgba(27,37,72,1) 19%, rgba(19,26,52,1) 82%, rgba(13,18,35,1) 100%, rgba(0,0,0,1) 100%);
+}
+
+.calculator{
+    width: 548px;
+    background-color: darkgrey;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.display{
+    width: 100%;
+    background-color: rgb(19, 19, 19);
+    border-radius: 25px;
+    color: white;
+    font-size: 4rem;
+    font-weight: bolder;
+    text-align: end;
+    padding: 1rem;
+}
+
+.button{
+    width: 100%;
+    padding: 1rem;
+    background-color: rgb(19, 19, 19);
+    display: flex;
+    gap: 1rem;
+    border-radius: 25px;
+    flex-direction: column;
+}
+
+.row{
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+}
+
+.btn{
+    width: 100px;
+    height: 100px;
+    /* padding: 2rem 0; */
+    font-size: 3rem;
+    font-weight: bolder;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.btn-del,.btn-zero{
+    width: 216px;
+    border-radius: 20px;
+    flex-shrink: 0;
+
+
+}
+
+.btn-zero{
+    text-align: start;
+    padding-left: 2.7rem;
+}
+
+.btn-operator{
+    background-color: rgb(156, 30, 30);
+    color: white;
+}
+
+.btn-operator.active{
+    background-color: rgb(202, 134, 134);
+}

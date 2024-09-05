@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <main class="calculator">
+        <div class="display">0</div>
+        <div class="button">
+            <div class="row">
+                <button onclick="resetCal()" class="btn">AC</button>
+                <button onclick="remove()" class="btn btn-del">Del</button>
+                <button onclick="operator('/',this)" class="btn btn-operator">÷</button>
+            </div>
+
+            <div class="row">
+                <button onclick="number(7)" class="btn btn-number">7</button>
+                <button onclick="number(8)" class="btn btn-number">8</button>
+                <button onclick="number(9)" class="btn btn-number">9</button>
+                <button onclick="operator('*',this)" class="btn btn-operator">x</button>
+            </div>
+
+            <div class="row">
+                <button onclick="number(4)" class="btn btn-number">4</button>
+                <button onclick="number(5)" class="btn btn-number">5</button>
+                <button onclick="number(6)" class="btn btn-number">6</button>
+                <button onclick="operator('-',this)" class="btn btn-operator">-</button>
+            </div>
+
+            <div class="row">
+                <button onclick="number(1)" class="btn btn-number">1</button>
+                <button onclick="number(2)" class="btn btn-number">2</button>
+                <button onclick="number(3)" class="btn btn-number">3</button>
+                <button onclick="operator('+',this)" class="btn btn-operator">+</button>
+            </div>
+
+            <div class="row">
+                <button onclick="number(0)" class="btn btn-zero">0</button>
+                <button onclick="number('.')" class="btn">.</button>
+                <button onclick="sum()" class="btn btn-operator">=</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+</html>
