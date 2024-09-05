@@ -13,12 +13,12 @@ function number(n){
     let val = "";
     
     if(cal.step == 1){
-        if(cal.val1 == '' && n == 0){return}
+        if((cal.val1 == '' && n == 0)|| String(cal.val1).length > 10){return}
         if(n == "." && cal.val1.indexOf('.') !== -1){return;}
         cal.val1 += n;
         val = cal.val1;
     }else{
-        if(cal.val2 == '' && n == 0){return}
+        if((cal.val2 == '' && n == 0) || String(cal.val2).length > 10){return}
         if(n == "." && cal.val2.indexOf('.') !== -1){return;}
         cal.val2 += n;
         val = cal.val2;
